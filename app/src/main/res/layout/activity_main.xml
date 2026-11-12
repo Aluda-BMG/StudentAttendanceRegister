@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F4F6FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Attendance"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#172554"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage your classroom attendance"
+        android:textSize="14sp"
+        android:textColor="#64748B"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/studentNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter student name"
+        android:padding="14dp"
+        android:backgroundTint="#2563EB"
+        android:inputType="textCapWords"/>
+
+    <Button
+        android:id="@+id/addStudentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attendance Summary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#172554"
+        android:layout_marginTop="28dp"/>
+
+    <TextView
+        android:id="@+id/attendanceSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: 0 | Present: 0 | Absent: 0"
+        android:textSize="15sp"
+        android:textColor="#334155"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student List"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#172554"
+        android:layout_marginTop="24dp"/>
+
+    <ListView
+        android:id="@+id/studentListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#CBD5E1"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
